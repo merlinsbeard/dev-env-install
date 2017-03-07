@@ -2,13 +2,14 @@ cd ~/
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git nginx byobu -y
 sudo apt-get install python3-dev python3-pip vim -y
-sudo apt-get install htop
+sudo apt-get install htop -y
 sudo pip3 install virtualenv
+sudo apt-get install exuberant-ctags flake8 -y
 
 
 # Git config
 NAME='BJ Paat'
-EMAIL=bjpaat@dailywarrior.ph
+EMAIL=brpaat@ayannah.com
 
 git config --global user.name "$NAME"
 git config --global user.email $EMAIL
@@ -20,4 +21,3 @@ cp vim-plug.vimrc ~/.vimrc
 cd ~/
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-sudo apt-get install exuberant-ctags flake8 -y
