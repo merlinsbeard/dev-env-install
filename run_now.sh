@@ -8,8 +8,8 @@ sudo apt-get install exuberant-ctags flake8 -y
 
 
 # Git config
-NAME='BJ Paat'
-EMAIL=brpaat@ayannah.com
+NAME=''
+EMAIL=me@me.com
 
 git config --global user.name "$NAME"
 git config --global user.email $EMAIL
