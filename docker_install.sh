@@ -1,3 +1,6 @@
+#!/bin/bash
+# Install Latest Docker CE
+#
 sudo apt-get install -y --no-install-recommends \
     apt-transport-https \
     ca-certificates \
@@ -14,3 +17,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get -y install docker-engine
 
+echo "Add user to group"
+
+sudo usermod -aG docker $USER
